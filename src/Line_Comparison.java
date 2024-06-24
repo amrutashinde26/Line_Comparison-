@@ -7,19 +7,17 @@ public class Line_Comparison {
     }
     public static void main(String[] args) {
 
-        Line_Comparison uc2 = new Line_Comparison();
-        double ans1_length_line=uc2.isEqual(2, 4, 5, 6);
-        double ans2_length_line=uc2.isEqual(2, 4, 5, 6);
+        Line_Comparison uc3 = new Line_Comparison();
+        double ans1_length_line=uc3.isEqual(1, 5, 4, 9);
+        double ans2_length_line=uc3.isEqual(2, 4, 5, 6);
 
         if(ans1_length_line == ans2_length_line){
             System.out.println("Length of  both lines are equal");
+        }else if(ans1_length_line<ans2_length_line){
+            System.out.println("Length of  line 1 is less than line 2");
         }
         else{
-            System.out.println("Length of  both lines are not equal");
-
+            System.out.println("Length of line 1 is greater than line 2");
         }
-
-
-
     }
 }
